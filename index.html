@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+ 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body background= "https://www.tripsavvy.com/thmb/zWKaNggWBSAI2H0q4q5n3BncGb0=/2212x1475/filters:fill(auto,1)/Snowy-Vancouver-Skyline-584b2ee05f9b58a8cdabb691.jpg", class= "bg-image">
+
+
+    <br />
+  <h1 id= "text-to-speech">
+      Vancouver Sightseeing Questionnaire
+  </h1>
+  <div><button type="button" onclick="textToAudio()">Speak</button></div>
+
+ 
+   <h3>
+       <div>
+           <button class="btn btn-dark" id= "text-to-speech1" onclick="textToAudio1()">
+               What are you most looking forward to doing?
+           </button>
+       </div>
+ 
+       <div>
+           <label>
+               <input type="radio" name="question1" value="a1">
+               Something festive
+           </label>
+           <br />
+           <label>
+               <input type="radio" name="question1" value="a2">
+               Something outdoors
+           </label>
+           <br />
+           <label>
+               <input type="radio" name="question1" value="a1">
+               Something to do with friends
+           </label>
+       </div>
+   </h3>
+
+   <br />
+
+   <h4>
+       <div>
+           <button class="btn btn-dark" id= "text-to-speech2" onclick="textToAudio2()">
+               What is your budget?
+           </button>
+       </div>
+ 
+       <div>
+           <label>
+               <input type="radio" name="question2" value="b1">
+               $100 or over
+           </label>
+           <br />
+           <label>
+               <input type="radio" name="question2" value="b2">
+               Under $100
+           </label>
+       </div>
+   </h4>
+
+   <br />
+ 
+   <h5>
+       <div>
+           <button class="btn btn-dark" id= "text-to-speech3" onclick="textToAudio3()">
+               What is your favourite activity out of the ones below?
+           </button>
+       </div>
+ 
+       <div>
+           <label>
+               <input type="radio" name="question3" value="c1">
+               Grabbing food and drinks
+           </label>
+           <br />
+           <label>
+               <input type="radio" name="question3" value="c2">
+               Sightseeing
+           </label>
+           <br />
+           <label>
+               <input type="radio" name="question3" value="c3">
+               Outdoor sports
+           </label>
+       </div>
+   </h5>
+
+   <br />
+   <br />
+
+   <h6>
+        <button type="submit" id="submit" onclick="makeAnswers()">
+        Submit
+        </button>
+
+        <br />
+        <br />
+
+        <div id="answer">
+            Place to visit:
+        </div>
+   </h6>
+
+   <script src="index.JS"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
